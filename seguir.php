@@ -25,7 +25,7 @@
     }else{
          $pdo->query("INSERT INTO segui1 SET seguindo= '$s', usuario= '$usulogado', status= '$status'");
         echo "Você está seguindo: ".$s;
-        echo "<script>location.href='usuarios.php'</script>";
+     
     }
 
 
