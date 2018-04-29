@@ -23,7 +23,7 @@
        echo "Você já está seguindo este usuario ou não está logado!!!";
     //Caso ele estiver logado então faça isso, ou seja segue o determinado usuário
     }else{
-         $pdo->query("INSERT INTO segui1 SET seguindo= '$s', usuario= '$usulogado', status= '$status'");
+         $pdo->query("INSERT INTO seguidores SET seguindo= '$s', usuario= '$usulogado', status= '$status'");
         echo "Você está seguindo: ".$s;
      
     }
