@@ -1,0 +1,9 @@
+Código para criar a tabela:
+CREATE TABLE usuários(
+id INT NOT NULL AUTO_INCREMENT,
+user varchar(50),
+email varchar(100),
+senha varchar(50),
+status tinyint,
+primary key(id)
+);

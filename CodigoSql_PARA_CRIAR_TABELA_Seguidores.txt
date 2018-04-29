@@ -1,0 +1,8 @@
+Código para criar a tabela:
+CREATE TABLE seguidores(
+id INT NOT NULL AUTO_INCREMENT,
+seguindo varchar(255),
+usuario varchar(255),
+status tinyint,
+primary key(id)
+);
