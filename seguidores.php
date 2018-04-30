@@ -16,7 +16,7 @@
         echo "Falha: ". $e->getMessage();
     }
    	//pegando o usuário pelo metodos GET
-    $s = $_POST['nome'];
+    $s = htmlspecialchars(addslashes($_POST['nome']));
     //Selecionando a tabela de seguidores e seguindo
     $seguidores = "SELECT * FROM segui1 WHERE seguindo= '$s'";
 	$seguidores = $pdo->query($seguidores);
